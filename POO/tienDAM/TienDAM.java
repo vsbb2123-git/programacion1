@@ -21,6 +21,9 @@ public class TienDAM {
                 case 2:
                     menuPedido();
                     break;
+                case 3:
+                    System.out.println("Adios");
+                    break;
             }
         }
     }
@@ -43,6 +46,18 @@ public class TienDAM {
 
                     break;
                 case 2:
+                
+                    break;
+                case 3:
+                
+                    break;
+                case 4:
+                
+                    break;
+                case 5:
+                
+                    break;
+                case 6:
                 
                     break;
             }

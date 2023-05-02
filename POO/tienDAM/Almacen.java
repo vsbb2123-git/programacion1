@@ -2,8 +2,6 @@ package tienDAM;
 
 import java.util.ArrayList;
 
-import ejercicio1.punto;
-
 public class Almacen {
     
     private ArrayList<Articulo> articulos;
