@@ -25,4 +25,4 @@ public class Ej2 {
         }
         System.out.println(notas);
     }
-}
+}//cambio
