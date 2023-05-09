@@ -1,4 +1,4 @@
-package programación;
+
 import java.util.Scanner;
 
 public class beta6

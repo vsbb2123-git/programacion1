@@ -1,4 +1,3 @@
-package programación.ejercicios;
 
 import java.util.Scanner;
 

@@ -1,4 +1,3 @@
-package programación;
 import java.util.Scanner;
 
 public class gamba2

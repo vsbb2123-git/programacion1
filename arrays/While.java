@@ -1,4 +1,4 @@
-package programación.ejercicios;
+
 import java.util.Scanner;
 
 public class While
