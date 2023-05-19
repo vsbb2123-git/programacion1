@@ -1,7 +1,8 @@
+
 public class Profesor extends Persona 
 {
-    protected double salario;
-    protected String especialidad;
+    String especialidad;
+    double salario;
    
   
     public Profesor(String n, String a, String f, double s, String e) 
