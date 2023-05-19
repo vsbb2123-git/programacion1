@@ -1,64 +1,92 @@
 package tienDAM;
-
-public class Articulo {
+public class Articulo 
+{
     private final String nombre;
     private double precio;
     private final double iva;
     private int cantidad;
 
-    public Articulo(String n,double p, double iva, int c){
-        nombre = n;
-        precio = p;
-        this.iva = iva;
-        cantidad = c;
+
+    public Articulo(String nom, double precio, double IVA, int cant) ///constructor completo
+    {
+        nombre = nom;
+        this.precio = precio;
+        iva = IVA;
+        cantidad = cant;
     }
 
-    public String getNombre() {
+
+    public String getNombre() ///getters
+    {
         return nombre;
     }
 
-    public double getPrecio(){
+    public double getPrecio()
+    {
         return precio;
     }
 
-    public double getIVA() {
+    public double getIVA() 
+    {
         return iva;
     }
 
-    public int getCantidad() {
+    public int getCantidad() 
+    {
         return cantidad;
     }
 
-    public boolean setPrecio(double p) {
-        if(p > 0) {
-            precio = p;
+
+    public boolean setPrecio(double precio) ///setters con comprobación 
+    {
+        if(precio>0) 
+        {
+            this.precio = precio;
             return true;
         }
-        else {
-            System.out.println("El precio debe ser mayor a cero");
+        else 
+        {
+            System.out.println("Error cambiando el precio, precio no puede ser igual o menor a 0");
             return false;
         }
     }
-
-    public boolean aumentar(int c) {
-        if(cantidad <= 0) {
-            System.out.println("Para aumentar introduzca una cantidad positiva");
+    public boolean aumentar(int cant) 
+    {
+        if(cant<=0) 
+        {
+            System.out.println("Error, no se puede aumentar la cantidad de un artículo con un numero negativo");
             return false;
         }
-        cantidad += c;
-        return true;
+        else
+        {
+            cantidad=cantidad + cant;
+            return true;
+        }
+        
     }
-
-    public boolean disminuir(int c) {
-        if(cantidad <= 0) {
-            System.out.println("Para disminuir introduzca una cantidad positiva");
+    public boolean disminuir(int cant) 
+    {
+        if(cant<=0) 
+        {
+            System.out.println("Error, no se puede disminuir la cantidad de un artículo con un numero negativo");
             return false;
         }
-        cantidad -= c;
-        return true;
+        else if(cantidad<cant)
+        {
+            System.out.println("Error, no disponemos de tantas unidades");
+            return false;
+        }
+        else 
+        {
+            cantidad=cantidad - cant;
+            return true;
+        }
+       
     }
+    
 
-    public String toString() {
-        return "El articulo con nombre: " + nombre + " y valor: " + precio + " tiene un IVA del: " + iva + " y hay disponible(s) " + cantidad;
+    public String toString() ///método toString
+    {
+        return "El articulo: " + nombre + "   tiene un precio de: " + precio + "   tiene un IVA del: " + iva + "   y hay " + cantidad + " disponible(s)" ;
     }
 }
