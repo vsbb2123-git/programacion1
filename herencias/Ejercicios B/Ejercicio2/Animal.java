@@ -1,13 +1,7 @@
-public class Animal 
+public class Animal extends MiMundo 
 {
-    String texto;
-
-    protected Animal()
-    {
-        texto="Animal";
-    }
     public String toString()
     {
-        return texto+" "; 
+        return this.getClass().getSimpleName(); 
     }    
 }

@@ -1,8 +1,9 @@
-
 import java.util.ArrayList;
 
-public class ProgramaFiguras {
-    public static void main(String[] args) {
+public class ProgramaFiguras 
+{
+    public static void main(String[] args) 
+    {
     ArrayList<Figura> figuras = new ArrayList<Figura>();
     figuras.add(new Circulo(10)); // Radio=10
     figuras.add(new Cuadrado(10)); // Lado=10
